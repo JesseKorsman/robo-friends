@@ -1,0 +1,9 @@
+@font-face {
+	font-family: '3954';
+	src: local('3954'), url('../components/3954.woff') format('woff');
+}
+
+h1 {
+    font-family: '3954';
+    color: rgb(0, 128, 75);
+}
