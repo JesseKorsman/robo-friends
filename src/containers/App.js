@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
 
@@ -43,13 +42,11 @@ function App({
   } else {
     return (
       <div className="tc">
-        <h1 className="f1">RobotFriends</h1>
+        <h1 className="f1">RoboFriends</h1>
         <SearchBox searchChange={onSearchChange} />
-        <Scroll>
-          <ErrorBoundry>
-            <CardList robots={filteredRobots} />
-          </ErrorBoundry>
-        </Scroll>
+        <ErrorBoundry>
+          <CardList robots={filteredRobots} />
+        </ErrorBoundry>
       </div>
     );
   }

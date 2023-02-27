@@ -1,4 +1,5 @@
 @font-face {
+    font-display: swap;
 	font-family: '3954';
 	src: local('3954'), url('../components/3954.woff') format('woff');
 }
